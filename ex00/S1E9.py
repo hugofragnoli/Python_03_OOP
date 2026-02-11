@@ -29,6 +29,11 @@ class Character(ABC):
 
 class Stark(Character):
     """
-    Docstring pour Stark
+    This one is a Stark from Winterfell, no doubt about it..
+    - How you doin' little wolf ?
     """
+    def __str__(self):
+        return
+    def __repr__(self):
+        return
 
