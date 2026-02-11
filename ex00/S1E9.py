@@ -32,6 +32,9 @@ class Stark(Character):
     This one is a Stark from Winterfell, no doubt about it..
     - How you doin' little wolf ?
     """
+    def __init__(self, first_name, is_alive=True):
+        self.family_name = "Stark"
+
     def __str__(self):
         return
     def __repr__(self):
