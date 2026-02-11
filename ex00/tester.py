@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
-
+from S1E9 import Character
+from S1E9 import Stark
 
 #ABC = abstract base classes
 Ned = Stark("Ned")
