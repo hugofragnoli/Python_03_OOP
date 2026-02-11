@@ -26,11 +26,6 @@ class Character(ABC):
     def __repr__(self):
         pass
 
-
-    @abstractmethod
-    def __die__(self):
-        pass
-
     def die(self):
         self.is_alive = False
 
