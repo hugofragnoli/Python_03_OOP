@@ -27,6 +27,14 @@ class Character(ABC):
         pass
 
 
+    @abstractmethod
+    def __die__(self):
+        pass
+
+    def die(self):
+        self.is_alive = False
+
+
 class Stark(Character):
     """
     This one is a Stark from Winterfell, no doubt about it..
@@ -34,6 +42,7 @@ class Stark(Character):
     """
     def __init__(self, first_name, is_alive=True):
         self.family_name = "Stark"
+        self.eyes
 
     def __str__(self):
         return
