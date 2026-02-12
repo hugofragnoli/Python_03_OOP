@@ -1,5 +1,6 @@
 from S1E7 import Baratheon, Lannister
 
+
 class King(Baratheon, Lannister):
     """This one is a King, half Lannister half Baratheon...
     - How you doin' little Joffrey  ?"""
@@ -24,8 +25,10 @@ class King(Baratheon, Lannister):
         """Change la couleur des cheveux du roi."""
         self.hairs = color
 
+    @property
     def get_eyes(self):
         return self.eyes
-    
+
+    @property
     def get_hairs(self):
         return self.hairs
