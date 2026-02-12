@@ -23,5 +23,9 @@ class King(Baratheon, Lannister):
     def set_hairs(self, color):
         """Change la couleur des cheveux du roi."""
         self.hairs = color
-    return
 
+    def get_eyes(self):
+        return self.eyes
+    
+    def get_hairs(self):
+        return self.hairs
