@@ -12,7 +12,7 @@ class calculator:
         new_vec = [x * y for x, y in zip(V1, V2)]
         a = sum(new_vec)
         print(f"Dot product is : {a}")
-    
+
     def sous_vec(V1: list, V2: list) -> None:
         """Multiplie le scalaire a chaque element et affiche le vecteur"""
         res = [x - y for x, y in zip(V1, V2)]
