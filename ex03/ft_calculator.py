@@ -13,5 +13,16 @@ class calculator:
         """Multiplie le scalaire a chaque element et affiche le vecteur"""
         self.vec = [x * object for x in self.vec]
         print(self.vec)
-# def __sub__(self, object) -> None: #your code here
-# def __truediv__(self, object) -> None: #your code here
+    
+    def __sub__(self, object) -> None:
+        """Multiplie le scalaire a chaque element et affiche le vecteur"""
+        self.vec = [x - object for x in self.vec]
+        print(self.vec)
+    
+    def __truediv__(self, object) -> None:
+        """Divise le scalaire a chaque element et affiche le vecteur"""
+        if object == 0:
+            print("Error: Division by zero.")
+            return
+        self.vec = [x - object for x in self.vec]
+        print(self.vec)
