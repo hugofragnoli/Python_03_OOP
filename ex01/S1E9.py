@@ -34,8 +34,7 @@ class Character(ABC):
 
 
 class Stark(Character):
-    """
-    This one is a Stark from Winterfell, no doubt about it..
+    """This one is a Stark from Winterfell, no doubt about it..
     - How you doin' little wolf ?
     """
     def __init__(self, first_name, is_alive=True):
