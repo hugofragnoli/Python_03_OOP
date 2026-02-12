@@ -25,13 +25,15 @@ class Lannister(Character):
         super().__init__(first_name, is_alive)
         self.family_name = "Lannister"
         self.eyes = "blue"
-        self.hairs = "gold"
+        self.hairs = "light"
 
     def __str__(self):
-        return f"('{self.first_name}', '{self.is_alive}')"
+        return f"Vector: ('{self.family_name}', '{self.eyes}', '{self.hairs}')"
     def __repr__(self):
         return self.__str__()
 
-    def create_lannister(Lannister):
-        return
+    @classmethod
+    def create_lannister(Lannister, first_name, is_alive=True):
+        """Méthode de classe pour créer un Lannister."""
+        return Lannister(first_name, is_alive)
     pass
