@@ -27,6 +27,7 @@ class Character(ABC):
         pass
 
     def die(self):
+        """Tue le Character en changeant son état"""
         self.is_alive = False
 
 
