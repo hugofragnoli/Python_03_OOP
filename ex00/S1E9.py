@@ -7,6 +7,8 @@ class Character(ABC):
     Elle définit le contrat que chaque famille doit suivre.
     """
     def __init__(self, first_name, is_alive=True):
+        """Every class that inherits from Char Will have a first name and
+        a bool to determine if she/he's alive"""
         self.first_name = first_name
         self.is_alive = is_alive
 
@@ -37,12 +39,13 @@ class Stark(Character):
     - How you doin' little wolf ?
     """
     def __init__(self, first_name, is_alive=True):
+        """Initialise un Stark avec ses attributs physiques par défaut."""
         # super va chercher le __init__ de Character
         super().__init__(first_name, is_alive)
         self.family_name = "Stark"
 
     def __str__(self):
-        return f"('{self.family_name}', '{self.eyes}', '{self.hairs}')"
+        return f"('{self.first_name}', '{self.is_alive}')"
     def __repr__(self):
         return self.__str__()
 
