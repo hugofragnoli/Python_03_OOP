@@ -1,0 +1,6 @@
+Les 3 avantages de super() :
+Maintenance : Si demain tu décides que is_alive doit s'appeler status, tu ne le changes que dans Character. Tous tes enfants (Stark, Lannister, etc.) seront mis à jour automatiquement grâce au super().
+
+Éviter les erreurs : Tu es sûr de ne rien oublier lors de l'initialisation de la base du personnage.
+
+Héritage multiple : Plus tard, si une classe hérite de deux parents, super() gérera l'ordre complexe d'appel des méthodes (ce qu'on appelle le MRO - Method Resolution Order).
