@@ -42,6 +42,7 @@ class Stark(Character):
         """Initialise un Stark avec ses attributs physiques par défaut."""
         # super va chercher le __init__ de Character
         super().__init__(first_name, is_alive)
+        self.family_name = "Stark"
 
     def __str__(self):
         return f"('{self.first_name}', '{self.is_alive}')"
