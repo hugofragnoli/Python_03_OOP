@@ -1,8 +1,7 @@
-from abc import ABC, abstractmethod
-from S1E9 import Character
 from S1E9 import Stark
 
-#ABC = abstract base classes
+
+# ABC = abstract base classes
 Ned = Stark("Ned")
 print(Ned.__dict__)
 print(Ned.is_alive)

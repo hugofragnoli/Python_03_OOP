@@ -14,6 +14,7 @@ class King(Baratheon, Lannister):
 
     def __str__(self):
         return f"Vector: ('{self.family_name}', '{self.eyes}', '{self.hairs}')"
+
     def __repr__(self):
         return self.__str__()
 
@@ -26,7 +27,9 @@ class King(Baratheon, Lannister):
         self.hairs = color
 
     def get_eyes(self):
+        """Retourne la couleur des yeux du roi."""
         return self.eyes
 
     def get_hairs(self):
+        """Retourne la couleur des cheveux du roi."""
         return self.hairs

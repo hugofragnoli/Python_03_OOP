@@ -45,5 +45,6 @@ class Stark(Character):
 
     def __str__(self):
         return f"('{self.first_name}', '{self.is_alive}')"
+
     def __repr__(self):
         return self.__str__()

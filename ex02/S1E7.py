@@ -14,8 +14,10 @@ class Baratheon(Character):
 
     def __str__(self):
         return f"Vector: ('{self.family_name}', '{self.eyes}', '{self.hairs}')"
+
     def __repr__(self):
         return self.__str__()
+
 
 class Lannister(Character):
     """This one is a Lannister, look, at his horrible blond hairs: no doubt about it..
@@ -30,6 +32,7 @@ class Lannister(Character):
 
     def __str__(self):
         return f"Vector: ('{self.family_name}', '{self.eyes}', '{self.hairs}')"
+
     def __repr__(self):
         return self.__str__()
 

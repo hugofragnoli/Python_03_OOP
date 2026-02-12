@@ -1,5 +1,6 @@
 from S1E9 import Character
 
+
 class Baratheon(Character):
     """This one is a Baratheon, look, how drunk he is no doubt about it..
     - How you doin' little deer  ?"""
@@ -13,8 +14,10 @@ class Baratheon(Character):
 
     def __str__(self):
         return f"Vector: ('{self.family_name}', '{self.eyes}', '{self.hairs}')"
+
     def __repr__(self):
         return self.__str__()
+
 
 class Lannister(Character):
     """This one is a Lannister, look, at his horrible blond hairs: no doubt about it..
@@ -29,6 +32,7 @@ class Lannister(Character):
 
     def __str__(self):
         return f"Vector: ('{self.family_name}', '{self.eyes}', '{self.hairs}')"
+
     def __repr__(self):
         return self.__str__()
 
