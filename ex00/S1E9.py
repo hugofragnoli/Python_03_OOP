@@ -29,6 +29,8 @@ class Character(ABC):
     def die(self):
         """Tue le Character en changeant son état"""
         self.is_alive = False
+        self.eyes = black
+        self.hairs = grey
 
 
 class Stark(Character):
@@ -38,10 +40,9 @@ class Stark(Character):
     """
     def __init__(self, first_name, is_alive=True):
         self.family_name = "Stark"
-        self.eyes
 
     def __str__(self):
-        return
+        return f"('{self.family_name}', '{self.eyes}', '{self.hairs}')"
     def __repr__(self):
-        return
+        return self.__str__()
 
