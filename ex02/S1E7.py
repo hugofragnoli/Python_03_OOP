@@ -1,5 +1,6 @@
 from S1E9 import Character
 
+
 class Baratheon(Character):
     """This one is a Baratheon, look, how drunk he is no doubt about it..
     - How you doin' little deer  ?"""

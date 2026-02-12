@@ -25,10 +25,8 @@ class King(Baratheon, Lannister):
         """Change la couleur des cheveux du roi."""
         self.hairs = color
 
-    @property
     def get_eyes(self):
         return self.eyes
 
-    @property
     def get_hairs(self):
         return self.hairs
