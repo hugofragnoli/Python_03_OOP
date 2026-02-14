@@ -13,9 +13,15 @@ class King(Baratheon, Lannister):
         self.hairs = "dark"
 
     def __str__(self):
+        """
+        Return une représentation sous forme de vecteur des traits de la famill
+        """
         return f"Vector: ('{self.family_name}', '{self.eyes}', '{self.hairs}')"
 
     def __repr__(self):
+        """
+        Retourne la représentation technique de l'instance Lannister.
+        """
         return self.__str__()
 
     def set_eyes(self, color):
